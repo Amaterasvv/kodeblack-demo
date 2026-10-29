@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Osnovni SEO -->
+  <meta name="description" content="Pravila o kolačićima na web stranici Kode Black. Saznajte koje kolačiće koristimo, zašto ih koristimo i kako možete upravljati postavkama.">
+  <meta name="keywords" content="kolačići, cookie policy, pravila o kolačićima, privatnost, Kode Black">
+  <meta name="author" content="Kode Black">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="hr">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kode Black — Pravila o kolačićima">
+  <meta property="og:description" content="Saznajte koje kolačiće koristi Kode Black, u koje svrhe i kako možete upravljati svojim postavkama.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kodeblackhr.com/kolacici.html">
+  <meta property="og:image" content="https://kodeblackhr.com/slike/preview.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kode Black — Pravila o kolačićima">
+  <meta name="twitter:description" content="Saznajte koje kolačiće koristi Kode Black, u koje svrhe i kako možete upravljati svojim postavkama.">
+  <meta name="twitter:image" content="https://kodeblackhr.com/slike/preview.jpg">
+
+  <title>Kode Black — Pravila o kolačićima</title>
+
+
+<link id="theme-link" rel="stylesheet" href="/style.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersLight ? 'light' : 'dark');
+
+      // apsolutne putanje – rade u svim podmapama
+      var HREFS = { light: '/lightstyle.css', dark: '/style.css' };
+
+      // 1) zamijeni stylesheet odmah (bez FOUC-a)
+      var link = document.getElementById('theme-link');
+      if (link) link.setAttribute('href', theme === 'light' ? HREFS.light : HREFS.dark);
+
+      // 2) doda klasu na <html> (korisno za tematske hookove u CSS-u)
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(theme);
+
+      // 3) inicijalno spremi ako nije već
+      if (!saved) localStorage.setItem('theme', theme);
+    } catch(e) {}
+  })();
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="conten/logogogo.png">
+
+</head>
+<body class="logo-stranica">
+
+
+<div id="preloader">
+  <img src="conten/loogo.png" alt="Logo" class="preloader-logo" />
+</div>
+
+
+<header class="navbar" id="hero">
+  <div class="nav-container">
+    <a href="index.html#kdhero" class="logo">
+      <img src="conten/darklogo.png" alt="Kode Black" />
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#paketi">USLUGE</a>
+      <a href="index.html#istrazi">REALIZACIJA</a>
+      <a href="index.html#kontakt">KONTAKT</a>
+      <a href="index.html#onama">O NAMA</a>
+      <a href="index.html#pomoc">POMOC</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html#paketi" onclick="toggleMenu()">USLUGE</a>
+  <a href="index.html#istrazi" onclick="toggleMenu()">REALIZACIJA</a>
+  <a href="index.html#kontakt" onclick="toggleMenu()">KONTAKT</a>
+  <a href="index.html#onama" onclick="toggleMenu()">O NAMA</a>
+  <a href="index.html#pomoc" onclick="toggleMenu()">POMOC</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html#paketi" onclick="toggleMenu()">USLUGE</a>
+  <a href="index.html#istrazi" onclick="toggleMenu()">REALIZACIJA</a>
+  <a href="index.html#kontakt" onclick="toggleMenu()">KONTAKT</a>
+  <a href="index.html#onama" onclick="toggleMenu()">O NAMA</a>
+  <a href="index.html#pomoc" onclick="toggleMenu()">POMOC</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+
+
+
+  <main class="cookies">
+    <section class="cookies-hero">
+      <div class="cookies-wrap">
+        <h1 class="cookies-title">Pravila o kolačićima</h1>
+        <p class="cookies-lead">
+          Ovdje objašnjavamo što su kolačići, koje koristimo, zašto i kako možeš upravljati postavkama.
+        </p>
+      </div>
+    </section>
+
+    <section class="cookies-card">
+      <div class="cookies-wrap">
+        <h2 class="cookies-h2">Što su kolačići?</h2>
+        <p>
+          Kolačići su male tekstualne datoteke koje web stranica pohranjuje na tvoj uređaj.
+          Dijele se na <strong>nužne</strong> (osnovne funkcije) i <strong>neobavezne</strong> (analitika, marketing).
+        </p>
+      </div>
+    </section>
+
+    <section class="cookies-card">
+      <div class="cookies-wrap">
+        <h2 class="cookies-h2">Koje kolačiće koristimo</h2>
+
+        <div class="cookies-type">
+          <h3 class="cookies-h3">1) Nužni kolačići</h3>
+          <p>
+            Potrebni za ispravan rad weba (npr. spremanje odabrane teme, zaštita obrazaca).
+          </p>
+          <div class="cookies-table-wrap">
+            <table class="cookies-table">
+              <thead>
+                <tr>
+                  <th>Naziv</th>
+                  <th>Svrha</th>
+                  <th>Trajanje</th>
+                  <th>Vrsta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>theme</td>
+                  <td>Spremanje korisničke teme (dark/light)</td>
+                  <td>12 mjeseci</td>
+                  <td>Prva strana</td>
+                </tr>
+                <tr>
+                  <td>form_ts / honeypot</td>
+                  <td>Sigurnost obrazaca (anti-spam)</td>
+                  <td>Sessija</td>
+                  <td>Prva strana</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="cookies-type">
+          <h3 class="cookies-h3">2) Analitički kolačići (neobavezni)</h3>
+          <p>
+            Služe za anonimnu statistiku posjeta i poboljšanje sadržaja. Aktiviraju se tek nakon pristanka.
+          </p>
+          <div class="cookies-table-wrap">
+            <table class="cookies-table">
+              <thead>
+                <tr>
+                  <th>Naziv</th>
+                  <th>Svrha</th>
+                  <th>Trajanje</th>
+                  <th>Vrsta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>_ga</td>
+                  <td>Google Analytics — anonimna statistika</td>
+                  <td>13 mjeseci</td>
+                  <td>Treća strana</td>
+                </tr>
+                <tr>
+                  <td>_gid</td>
+                  <td>Google Analytics — razlikovanje korisnika</td>
+                  <td>24 sata</td>
+                  <td>Treća strana</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Ako ne koristiš GA, slobodno izbriši ovaj blok -->
+        </div>
+      </div>
+    </section>
+
+    <section class="cookies-card">
+      <div class="cookies-wrap">
+        <h2 class="cookies-h2">Upravljanje kolačićima</h2>
+        <ol class="cookies-steps">
+          <li><strong>Banner:</strong> Pri prvom posjetu prihvati, odbij ili prilagodi postavke.</li>
+          <li><strong>Promjena odluke:</strong> Postavke možeš promijeniti brisanjem kolačića u pregledniku ili klikom na gumb ispod.</li>
+          <li><strong>Preglednik:</strong> U postavkama preglednika (Chrome, Firefox, Safari…) možeš blokirati kolačiće.</li>
+        </ol>
+
+        <div class="cookies-actions">
+          <button class="cookies-btn" id="cookies-reset" type="button">Resetiraj neobavezne postavke</button>
+        </div>
+        <p class="cookies-hint">
+          Napomena: blokiranje/brisanje može utjecati na funkcionalnost stranice.
+        </p>
+      </div>
+    </section>
+
+    <section class="cookies-card">
+      <div class="cookies-wrap">
+        <h2 class="cookies-h2">Voditelj obrade i kontakt</h2>
+        <p>
+          Kode Black, Pakrac, Hrvatska. Pitanja: <a href="mailto:info@kodeblackhr.com">info@kodeblackhr.com</a>.
+        </p>
+        <p class="cookies-meta">Zadnje ažuriranje: 29. kolovoza 2025.</p>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-bg" aria-hidden="true"></div>
+
+  <div class="footer-content footer-compact">
+    <!-- Lijevo: Brand + social -->
+    <div class="f-left">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <strong class="brand-name">KodeBlack</strong>
+      </div>
+      <p class="brand-text">
+        Radimo moderne webove i automatizacije s fokusom na performanse, UX i mjerljive rezultate.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61579820222693" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/kodeblackhr/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@kodeblackhr"  target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="mailto:info@kodeblackhr.com" aria-label="Email">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Desno: Legal -->
+    <nav class="footer-legal" aria-label="Pravne informacije">
+      <a href="uvjeti.html">Uvjeti korištenja</a>
+      <a href="privatnost.html">Privatnost</a>
+      <a href="kolacici.html">Kolačići</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Kode Black</p>
+    <button class="to-top" aria-label="Na vrh" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  </div>
+</footer>
+
+
+  <script>
+    // Reset tvog consent ključa (primjer). Po potrebi promijeni naziv.
+    document.getElementById('cookies-reset')?.addEventListener('click', function(){
+      try {
+        localStorage.removeItem('analytics_consent');
+        alert('Postavke neobaveznih kolačića su resetirane. Osvježi stranicu.');
+      } catch(e){}
+    });
+  </script>
+<script src="./darklight.js"  defer></script>
+
+  <script src="fade.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

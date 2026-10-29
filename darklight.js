@@ -8,8 +8,8 @@
   'use strict';
 
   // ---- Putanje CSS-a
-  var DARK_HREF  = 'style.css';
-  var LIGHT_HREF = 'lightstyle.css';
+  var DARK_HREF  = '/style.css';
+  var LIGHT_HREF = '/lightstyle.css';
 
   // Helper: provjerava je li href već pokazuje na light CSS
   function isLightHref(href) {

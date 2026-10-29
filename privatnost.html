@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Osnovni SEO -->
+  <meta name="description" content="Politika privatnosti Kode Black web stranice. Saznajte koje osobne podatke prikupljamo, u koje svrhe i koja su vaša prava prema GDPR-u.">
+  <meta name="keywords" content="politika privatnosti, privatnost, osobni podaci, GDPR, Kode Black, zaštita podataka">
+  <meta name="author" content="Kode Black">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="hr">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kode Black — Politika privatnosti">
+  <meta property="og:description" content="Saznajte kako Kode Black prikuplja i obrađuje osobne podatke, te koja prava imate prema GDPR-u.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kodeblackhr.com/privatnost.html">
+  <meta property="og:image" content="https://kodeblackhr.com/slike/preview.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kode Black — Politika privatnosti">
+  <meta name="twitter:description" content="Saznajte kako Kode Black prikuplja i obrađuje osobne podatke, te koja prava imate prema GDPR-u.">
+  <meta name="twitter:image" content="https://kodeblackhr.com/slike/preview.jpg">
+
+  <title>Kode Black — Politika privatnosti</title>
+
+
+<link id="theme-link" rel="stylesheet" href="/style.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersLight ? 'light' : 'dark');
+
+      // apsolutne putanje – rade u svim podmapama
+      var HREFS = { light: '/lightstyle.css', dark: '/style.css' };
+
+      // 1) zamijeni stylesheet odmah (bez FOUC-a)
+      var link = document.getElementById('theme-link');
+      if (link) link.setAttribute('href', theme === 'light' ? HREFS.light : HREFS.dark);
+
+      // 2) doda klasu na <html> (korisno za tematske hookove u CSS-u)
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(theme);
+
+      // 3) inicijalno spremi ako nije već
+      if (!saved) localStorage.setItem('theme', theme);
+    } catch(e) {}
+  })();
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="conten/logogogo.png">
+
+</head>
+<body class="logo-stranica">
+
+
+<div id="preloader">
+  <img src="conten/loogo.png" alt="Logo" class="preloader-logo" />
+</div>
+
+
+<header class="navbar" id="hero">
+  <div class="nav-container">
+    <a href="index.html#kdhero" class="logo">
+      <img src="conten/darklogo.png" alt="Kode Black" />
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#paketi">USLUGE</a>
+      <a href="index.html#istrazi">REALIZACIJA</a>
+      <a href="index.html#kontakt">KONTAKT</a>
+      <a href="index.html#onama">O NAMA</a>
+      <a href="index.html#pomoc">POMOC</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html#paketi" onclick="toggleMenu()">USLUGE</a>
+  <a href="index.html#istrazi" onclick="toggleMenu()">REALIZACIJA</a>
+  <a href="index.html#kontakt" onclick="toggleMenu()">KONTAKT</a>
+  <a href="index.html#onama" onclick="toggleMenu()">O NAMA</a>
+  <a href="index.html#pomoc" onclick="toggleMenu()">POMOC</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html#paketi" onclick="toggleMenu()">USLUGE</a>
+  <a href="index.html#istrazi" onclick="toggleMenu()">REALIZACIJA</a>
+  <a href="index.html#kontakt" onclick="toggleMenu()">KONTAKT</a>
+  <a href="index.html#onama" onclick="toggleMenu()">O NAMA</a>
+  <a href="index.html#pomoc" onclick="toggleMenu()">POMOC</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+
+
+
+
+  <main class="privacy">
+    <section class="privacy-hero">
+      
+      <div class="privacy-wrap">
+        <h1 class="privacy-title">Politika privatnosti</h1>
+        <p class="privacy-lead">
+          Ova politika objašnjava koje podatke prikupljamo, u koje svrhe ih obrađujemo,
+          koliko dugo ih čuvamo te koja su tvoja prava prema GDPR-u.
+        </p>
+      </div>
+      
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+        <h2 class="privacy-h2">Tko smo</h2>
+        <p>
+          Kode Black, Pakrac, Hrvatska. Za sva pitanja vezana uz privatnost
+          piši na <a href="mailto:info@kodeblackhr.com">info@kodeblackhr.com</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+
+        <h2 class="privacy-h2">Koje podatke prikupljamo</h2>
+        <div class="privacy-table-wrap">
+          <table class="privacy-table">
+            <thead>
+              <tr>
+                <th>Kategorija</th>
+                <th>Primjeri</th>
+                <th>Svrha</th>
+                <th>Pravna osnova</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kontakt podaci</td>
+                <td>Ime, e-pošta, telefon</td>
+                <td>Odgovor na upite, ponude</td>
+                <td>Legitimni interes / ugovorni odnos</td>
+              </tr>
+              <tr>
+                <td>Sadržaj poruka</td>
+                <td>Tekst iz kontakt forme</td>
+                <td>Podrška, vođenje evidencije komunikacije</td>
+                <td>Legitimni interes</td>
+              </tr>
+              <tr>
+                <td>Tehnički podaci</td>
+                <td>IP, user-agent, log zapisi</td>
+                <td>Sigurnost, sprječavanje zlouporabe</td>
+                <td>Legitimni interes / pravna obveza</td>
+              </tr>
+              <tr>
+                <td>Analitika (opcionalno)</td>
+                <td>Anonimne metrike posjećenosti</td>
+                <td>Unaprjeđenje sadržaja</td>
+                <td>Privola</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="privacy-note">
+          Napomena: Analitički podaci prikupljaju se tek nakon tvoje izričite privole.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+        <h2 class="privacy-h2">Kako i koliko dugo čuvamo podatke</h2>
+        <ul class="privacy-list">
+          <li><strong>Kontakt i poruke:</strong> do 24 mjeseca od zadnje komunikacije ili dulje ako je nužno za izvršenje ugovora / pravne obveze.</li>
+          <li><strong>Tehnički logovi:</strong> 30–180 dana radi sigurnosti i otklanjanja smetnji.</li>
+          <li><strong>Analitika:</strong> prema pravilima alata treće strane (npr. GA do 14 mjeseci) — samo ako je dana privola.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+        <h2 class="privacy-h2">S kim dijelimo podatke</h2>
+        <p>
+          Podatke ne prodajemo. Dijelimo ih samo s pouzdanim izvršiteljima obrade (npr. hosting, e-mail,
+          analitika) isključivo u svrhe navedene u ovoj politici i na temelju ugovornih obveza i odgovarajućih mjera zaštite.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+        <h2 class="privacy-h2">Tvoja prava</h2>
+        <ul class="privacy-list">
+          <li>pravo na pristup, ispravak i brisanje;</li>
+          <li>pravo na ograničenje obrade i prigovor;</li>
+          <li>pravo na prenosivost podataka;</li>
+          <li>pravo povući privolu u bilo kojem trenutku (bez utjecaja na zakonitost obrade prije povlačenja);</li>
+          <li>pravo podnijeti pritužbu AZOP-u (Agencija za zaštitu osobnih podataka).</li>
+        </ul>
+        <p>
+          Za ostvarivanje prava javi se na <a href="mailto:info@kodeblackhr.com">info@kodeblackhr.com</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+        <h2 class="privacy-h2">Kolačići i slične tehnologije</h2>
+        <p>
+          Detaljna pravila o kolačićima i upravljanje postavkama nalaze se na stranici
+          <a href="/kolacici.html">Kolačići</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="privacy-wrap">
+        <h2 class="privacy-h2">Izmjene politike</h2>
+        <p>
+          Politiku povremeno možemo ažurirati. Značajne izmjene objavit ćemo na ovoj stranici.
+        </p>
+        <p class="privacy-meta">Zadnje ažuriranje: 29. kolovoza 2025.</p>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-bg" aria-hidden="true"></div>
+
+  <div class="footer-content footer-compact">
+    <!-- Lijevo: Brand + social -->
+    <div class="f-left">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <strong class="brand-name">KodeBlack</strong>
+      </div>
+      <p class="brand-text">
+        Radimo moderne webove i automatizacije s fokusom na performanse, UX i mjerljive rezultate.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61579820222693" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/kodeblackhr/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@kodeblackhr"  target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="mailto:info@kodeblackhr.com" aria-label="Email">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Desno: Legal -->
+    <nav class="footer-legal" aria-label="Pravne informacije">
+      <a href="uvjeti.html">Uvjeti korištenja</a>
+      <a href="privatnost.html">Privatnost</a>
+      <a href="kolacici.html">Kolačići</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Kode Black</p>
+    <button class="to-top" aria-label="Na vrh" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  </div>
+</footer>
+
+
+ 
+<script src="./darklight.js"  defer></script>
+
+  <script src="fade.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

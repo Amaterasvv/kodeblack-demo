@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Osnovni SEO -->
+  <meta name="description" content="Pročitajte uvjete korištenja web stranice Kode Black. Saznajte pravila korištenja, odgovornost i prava korisnika.">
+  <meta name="keywords" content="uvjeti korištenja, Kode Black, pravila, odgovornost, korisnici, web stranica">
+  <meta name="author" content="Kode Black">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="hr">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kode Black — Uvjeti korištenja">
+  <meta property="og:description" content="Uvjeti korištenja web stranice Kode Black: pravila, obveze i ograničenja odgovornosti.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kodeblackhr.com/uvjeti.html">
+  <meta property="og:image" content="https://kodeblackhr.com/slike/preview.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kode Black — Uvjeti korištenja">
+  <meta name="twitter:description" content="Uvjeti korištenja web stranice Kode Black: pravila, obveze i ograničenja odgovornosti.">
+  <meta name="twitter:image" content="https://kodeblackhr.com/slike/preview.jpg">
+
+  <title>Kode Black — Uvjeti korištenja</title>
+
+
+<link id="theme-link" rel="stylesheet" href="/style.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersLight ? 'light' : 'dark');
+
+      // apsolutne putanje – rade u svim podmapama
+      var HREFS = { light: '/lightstyle.css', dark: '/style.css' };
+
+      // 1) zamijeni stylesheet odmah (bez FOUC-a)
+      var link = document.getElementById('theme-link');
+      if (link) link.setAttribute('href', theme === 'light' ? HREFS.light : HREFS.dark);
+
+      // 2) doda klasu na <html> (korisno za tematske hookove u CSS-u)
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(theme);
+
+      // 3) inicijalno spremi ako nije već
+      if (!saved) localStorage.setItem('theme', theme);
+    } catch(e) {}
+  })();
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="conten/logogogo.png">
+
+</head>
+<body class="logo-stranica">
+
+
+<div id="preloader">
+  <img src="conten/loogo.png" alt="Logo" class="preloader-logo" />
+</div>
+
+
+<header class="navbar" id="hero">
+  <div class="nav-container">
+    <a href="index.html#kdhero" class="logo">
+      <img src="conten/darklogo.png" alt="Kode Black" />
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#paketi">USLUGE</a>
+      <a href="index.html#istrazi">REALIZACIJA</a>
+      <a href="index.html#kontakt">KONTAKT</a>
+      <a href="index.html#onama">O NAMA</a>
+      <a href="index.html#pomoc">POMOC</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html#paketi" onclick="toggleMenu()">USLUGE</a>
+  <a href="index.html#istrazi" onclick="toggleMenu()">REALIZACIJA</a>
+  <a href="index.html#kontakt" onclick="toggleMenu()">KONTAKT</a>
+  <a href="index.html#onama" onclick="toggleMenu()">O NAMA</a>
+  <a href="index.html#pomoc" onclick="toggleMenu()">POMOC</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html#paketi" onclick="toggleMenu()">USLUGE</a>
+  <a href="index.html#istrazi" onclick="toggleMenu()">REALIZACIJA</a>
+  <a href="index.html#kontakt" onclick="toggleMenu()">KONTAKT</a>
+  <a href="index.html#onama" onclick="toggleMenu()">O NAMA</a>
+  <a href="index.html#pomoc" onclick="toggleMenu()">POMOC</a>
+</div>
+<div id="overlay" class="overlay"></div>
+
+
+
+ <main class="terms">
+    <section class="terms-hero">
+      <div class="terms-wrap">
+        <h1 class="terms-title">Uvjeti korištenja</h1>
+        <p class="terms-lead">
+          Korištenjem ove web stranice prihvaćaš uvjete opisane u nastavku. Ako se s uvjetima ne slažeš, molimo ne koristi stranicu.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">1. Općenito</h2>
+        <p>
+          Ovi Uvjeti uređuju korištenje web stranice Kode Black (u nastavku: “Stranica”). Zadržavamo pravo izmjene Uvjeta u bilo kojem trenutku. Ažurirana verzija bit će objavljena na ovoj stranici i stupa na snagu danom objave.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">2. Prihvatljivo korištenje</h2>
+        <ul class="terms-list">
+          <li>Ne koristite Stranicu na način koji narušava sigurnost, dostupnost ili integritet usluge.</li>
+          <li>Ne pokušavajte neovlašten pristup sustavima, podacima ili mrežama povezanim sa Stranicom.</li>
+          <li>Ne prenosite sadržaj koji je nezakonit, uvredljiv, obmanjujući ili krši tuđa prava.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">3. Intelektualno vlasništvo</h2>
+        <p>
+          Svi materijali na Stranici (dizajn, kod, tekst, slike) zaštićeni su autorskim pravom i drugim pravima intelektualnog vlasništva. Nije dopušteno kopiranje, umnožavanje ili distribucija bez prethodnog pisanog odobrenja, osim kada je to izričito dopušteno zakonom.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">4. Vanjske poveznice</h2>
+        <p>
+          Stranica može sadržavati poveznice na web stranice trećih strana. Ne odgovaramo za njihov sadržaj ni za prakse privatnosti; korištenje takvih poveznica je na vlastitu odgovornost.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">5. Odricanje od odgovornosti</h2>
+        <p>
+          Stranica i sav sadržaj dostupni su “kakvi jesu” bez izričitih ili prešutnih jamstava. U granicama dopuštenim zakonom isključujemo odgovornost za štetu koja proizlazi iz korištenja ili nemogućnosti korištenja Stranice.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">6. Ograničenje odgovornosti</h2>
+        <p>
+          Ni u kojem slučaju ne odgovaramo za neizravnu, slučajnu, posebnu ili posljedičnu štetu, uključujući izgubljenu dobit, gubitak podataka ili prekid poslovanja, proizašle iz korištenja Stranice.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">7. Mjerodavno pravo</h2>
+        <p>
+          Na ove Uvjete primjenjuje se pravo Republike Hrvatske. Za sporove je nadležan stvarno nadležni sud prema sjedištu voditelja stranice.
+        </p>
+      </div>
+    </section>
+
+    <section class="terms-card">
+      <div class="terms-wrap">
+        <h2 class="terms-h2">8. Kontakt</h2>
+        <p>
+          Za pitanja u vezi ovih Uvjeta piši na <a href="mailto:info@kodeblackhr.com">info@kodeblackhr.com</a>.
+        </p>
+        <p class="terms-meta">Zadnje ažuriranje: 29. kolovoza 2025.</p>
+      </div>
+    </section>
+  </main>
+
+
+
+<footer class="footer">
+  <div class="footer-bg" aria-hidden="true"></div>
+
+  <div class="footer-content footer-compact">
+    <!-- Lijevo: Brand + social -->
+    <div class="f-left">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <strong class="brand-name">KodeBlack</strong>
+      </div>
+      <p class="brand-text">
+        Radimo moderne webove i automatizacije s fokusom na performanse, UX i mjerljive rezultate.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61579820222693" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/kodeblackhr/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@kodeblackhr"  target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="mailto:info@kodeblackhr.com" aria-label="Email">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Desno: Legal -->
+    <nav class="footer-legal" aria-label="Pravne informacije">
+      <a href="uvjeti.html">Uvjeti korištenja</a>
+      <a href="privatnost.html">Privatnost</a>
+      <a href="kolacici.html">Kolačići</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Kode Black</p>
+    <button class="to-top" aria-label="Na vrh" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  </div>
+</footer>
+
+
+ 
+<script src="./darklight.js"  defer></script>
+
+  <script src="fade.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

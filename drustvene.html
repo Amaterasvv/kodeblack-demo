@@ -4,11 +4,60 @@
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Osnovni SEO -->
+  <meta name="description" content="Kreiranje sadržaja, vizuala i kampanja za društvene mreže. Povećajte online prisutnost uz Kode Black digitalna rješenja.">
+  <meta name="keywords" content="društvene mreže, marketing, digitalni marketing, Facebook, Instagram, Kode Black">
+  <meta name="author" content="Kode Black">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="hr">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kode Black – Društvene mreže i digitalni marketing">
+  <meta property="og:description" content="Sadržaj, vizuali i kampanje za društvene mreže koji privlače publiku.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tvojadomena.com/drustvene.html">
+  <meta property="og:image" content="https://tvojadomena.com/conten/preqiev.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kode Black – Društvene mreže i digitalni marketing">
+  <meta name="twitter:description" content="Sadržaj, vizuali i kampanje za društvene mreže koji privlače publiku.">
+  <meta name="twitter:image" content="https://tvojadomena.com/conten/preqiev.png">
+
   <title>Kode Black - Društvene mreže</title>
-  <link rel="stylesheet" href="style.css" />
+
+
+<link id="theme-link" rel="stylesheet" href="/style.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersLight ? 'light' : 'dark');
+
+      // apsolutne putanje – rade u svim podmapama
+      var HREFS = { light: '/lightstyle.css', dark: '/style.css' };
+
+      // 1) zamijeni stylesheet odmah (bez FOUC-a)
+      var link = document.getElementById('theme-link');
+      if (link) link.setAttribute('href', theme === 'light' ? HREFS.light : HREFS.dark);
+
+      // 2) doda klasu na <html> (korisno za tematske hookove u CSS-u)
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(theme);
+
+      // 3) inicijalno spremi ako nije već
+      if (!saved) localStorage.setItem('theme', theme);
+    } catch(e) {}
+  })();
+</script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="icon" type="image/png" href="conten/logogogo.png">
+
+
+
 
 </head>
 <body class="drustv-stranica">
@@ -22,7 +71,7 @@
   
 <header class="navbar" id="hero">
   <div class="nav-container">
-    <a href="#kdhero" class="logo">
+    <a href="index.html#kdhero" class="logo">
       <img src="conten/darklogo.png" alt="Kode Black" />
     </a>
 
@@ -65,6 +114,10 @@
 
 
 <section class="mreze-section">
+  <button id="theme-toggle" class="theme-toggle" aria-label="Promijeni temu">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
   <h1 class="mreze-naslov">Vaš brend na društvenim mrežama</h1>
   <p class="mreze-opis">Storyji, feedovi i promotivni dizajn koji privlače pažnju</p>
 
@@ -264,7 +317,10 @@
 
 
 
+
 <footer class="footer">
+  <div class="footer-bg" aria-hidden="true"></div>
+
   <div class="footer-content footer-compact">
     <!-- Lijevo: Brand + social -->
     <div class="f-left">
@@ -277,51 +333,38 @@
       </p>
 
       <div class="footer-social">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=61579820222693" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://www.instagram.com/kodeblackhr/" target="_blank" rel="noopener" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com/company/kodeblack" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.tiktok.com/@kodeblackhr"  target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
         </a>
-        <a href="mailto:hello@kodeblack.hr" aria-label="Email">
+        <a href="mailto:info@kodeblackhr.com" aria-label="Email">
           <i class="far fa-envelope"></i>
         </a>
       </div>
     </div>
 
-    <!-- Sredina: Newsletter (jedan red) -->
-    <form class="newsletter" onsubmit="event.preventDefault(); /* hook */">
-      <label class="nl-title">Budimo u kontaktu</label>
-      <div class="nl-row">
-        <input type="email" placeholder="tvoj@email.com" aria-label="Email" required>
-        <button type="submit">Pretplati me</button>
-      </div>
-      <div class="badges1">
-        <span class="badge1">Core Web Vitals</span>
-        <span class="badge1">SEO‑Ready</span>
-        <span class="badge1">Privacy‑first</span>
-      </div>
-    </form>
-
-    <!-- Desno: Legal (u jednom redu) -->
-    <nav class="footer-legal">
-      <a href="#uvjeti">Uvjeti korištenja</a>
-      <a href="#privatnost">Privatnost</a>
-      <a href="#kolacici">Kolačići</a>
-      <a href="#kontakt">Kontakt</a>
+    <!-- Desno: Legal -->
+    <nav class="footer-legal" aria-label="Pravne informacije">
+      <a href="uvjeti.html">Uvjeti korištenja</a>
+      <a href="privatnost.html">Privatnost</a>
+      <a href="kolacici.html">Kolačići</a>
+      <a href="index.html#kontakt">Kontakt</a>
     </nav>
   </div>
 
   <div class="footer-bottom">
-    <p>KodeBlack © 2025. Sva prava pridržana.</p>
+    <p>© <span id="year"></span> Kode Black</p>
     <button class="to-top" aria-label="Na vrh" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
   </div>
 </footer>
 
   <script src="fade.js"></script>
+<script src="/darklight.js" defer></script>
 
   <script src="script.js"></script>
 </body>
