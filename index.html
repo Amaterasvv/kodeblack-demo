@@ -32,7 +32,7 @@
       var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
       var theme = saved || (prefersLight ? 'light' : 'dark');
       var link = document.getElementById('theme-link');
-      if (link) link.href = theme === 'light' ? 'lightstyle.css' : 'style.css';
+      if (link) link.href = 'style.css';
       if (!saved) localStorage.setItem('theme', theme);
     } catch(e) {}
   })();
